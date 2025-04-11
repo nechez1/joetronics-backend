@@ -2,8 +2,9 @@ services:
   - type: web
     name: joetronics-backend
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    python python/server.py
+    buildCommand: ""
+    startCommand: python server.py
+    workingDir: python
     envVars:
       - key: FLASK_ENV
         value: production
