@@ -3,7 +3,7 @@ from flask_cors import CORS
 import stripe
 import requests
 import json  # 🔁 Moved to the top
-from database import save_order, initialize_db
+from python.database import save_order, initialize_db
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
